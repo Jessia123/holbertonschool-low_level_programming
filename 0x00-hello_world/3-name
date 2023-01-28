@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc first.c -o first
+gcc -o cisfun $CFILE
