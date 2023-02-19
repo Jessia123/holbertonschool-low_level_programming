@@ -1,4 +1,4 @@
-#include "main.h"
+#include "holberton.h"
 /**
  * _isalpha - searches if character is alphanumeric
  * @c: reference character
