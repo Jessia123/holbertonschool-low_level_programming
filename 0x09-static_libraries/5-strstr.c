@@ -1,4 +1,4 @@
-#include "main.h"
+#include "holberton.h"
 /**
  *  _strstr - main function
  * @haystack: string searched for
