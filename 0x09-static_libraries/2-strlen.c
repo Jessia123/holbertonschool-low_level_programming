@@ -1,4 +1,4 @@
-#include "main.h"
+#include "holberton.h"
 /**
  * _strlen - main function
  * @s: primary variable that counts the function
