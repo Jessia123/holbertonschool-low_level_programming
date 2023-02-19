@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
  * _isdigit - checks to see if file is digit
  * @c: variable that propagates if digit or not
