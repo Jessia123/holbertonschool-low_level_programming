@@ -42,3 +42,4 @@ int is_prime_number(int n);
 int _prime_calc(int x, int num);
 
 #endif /* MAIN_H */
+
