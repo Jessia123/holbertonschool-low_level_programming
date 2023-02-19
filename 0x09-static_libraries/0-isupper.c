@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
  * _isupper - tells if file is uppercase
  * @c: the variable that prints if uppercase
