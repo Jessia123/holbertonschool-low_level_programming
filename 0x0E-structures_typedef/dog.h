@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 225eb7ceb9a9961d0f2f1e9fcbed7a04345fbe91
 #ifndef DOG_H
 #define DOG_H
 #include <stdlib.h>
