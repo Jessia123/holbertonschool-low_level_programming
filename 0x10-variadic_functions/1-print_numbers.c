@@ -1,11 +1,12 @@
-nclude "variadic_functions.h"
+#include "variadic_functions.h"
 #include <stdio.h>
 #include <stdarg.h>
-/**
- * * print_numbers - check the code
- * * @separator: string
- * * @n: integer
- * */
+#include <stddef.h>
+/*
+ * print_numbers - check the code
+ * @separator: string
+ *  @n: integer 
+ */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	unsigned int x;
