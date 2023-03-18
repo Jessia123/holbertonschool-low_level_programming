@@ -1,4 +1,4 @@
-nclude "lists.h"
+#include "lists.h"
 #include "_strlen.c"
 
 /**
@@ -34,3 +34,4 @@ list_t *add_node(list_t **head, const char *str)
 
 														return (nNode);
 }
+
