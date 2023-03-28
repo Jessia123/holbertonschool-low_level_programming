@@ -1,22 +1,20 @@
-#include <stdio.h>
 #include "lists.h"
 
 /**
-* print_listint -  check the code
-* @h: pointer
-*
-* Return: counter
-*/
-
-size_t print_listint(const listint_t *h)
+ * dlistint_len - returns the number of elements in a linked dlistint_t list.
+ * @h: pointer to the list.
+ * Return: number of nodes.
+ **/
+size_t dlistint_len(const dlistint_t *h)
 {
-	size_t counter = 0;
+	const dlistint_t *node = h;
+	size_t cont = 0;
 
-	while (h != NULL)
+	while (node)
 	{
-	printf("%d\n", h->n);
-	counter++;
-	h = h->next;
+		cont++;
+		node = node->next;
 	}
-	return (counter);
+
+	return (cont);
 }
