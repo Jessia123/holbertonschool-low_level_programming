@@ -1,15 +1,6 @@
 #include "hash_tables.h"
-
-/**
- * hash_table_set -  adss an element to hash table
- * if collision adds new node at begining of the list
- * @ht: hashtable to add/update
- * @key: The key
- * @value: value for the key
- * Return: 1 if success, 0 if failure
- */
-
-int hash_table_set(hash_table_t *ht, const char *key, const char *value)
+/*
+ */int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	hash_node_t *search, *new_node = NULL;
 	unsigned long int index;

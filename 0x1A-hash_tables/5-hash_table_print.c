@@ -1,13 +1,6 @@
 #include "hash_tables.h"
-
-
-/**
- * hash_table_print - prints a hash table
- * @ht: pntr to table
- * Return: void
- */
-
-void hash_table_print(const hash_table_t *ht)
+/*
+ */void hash_table_print(const hash_table_t *ht)
 {
 	hash_node_t *search;
 	int flag = 1;
