@@ -1,26 +1,33 @@
 #include "lists.h"
-/*
- */dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
+/**
+ *add_nodeint_end - this adds
+ *@head: if the head causes you to sin cut it off
+ *@n: is a letter and likes it that way
+ *Return: newNode
+ */
+
+listint_t *add_nodeint_end(listint_t **head, const int n)
 {
-dlistint_t *new;
-dlistint_t *ptr;
-new = malloc(sizeof(dlistint_t));
-if (new == NULL)
-return (NULL);
-if (*head == NULL)
-{
-*head = new;
-new->next = NULL;
-new->prev = NULL;
-new->n = n;
-return (new);
-}
-ptr = *head;
-while (ptr->next)
-ptr = ptr->next;
-new->n = n;
-new->next = NULL;
-new->prev = ptr;
-ptr->next = new;
-return (new);
+	listint_t *newNode = malloc(sizeof(*newNode));
+	listint_t *tempCycle = *head;
+
+	if (!newNode)
+	{
+		return (NULL);
+	}
+	newNode->n = n;
+	newNode->next = NULL;
+
+	if (*head == NULL)
+	{
+		*head = newNode;
+		return (newNode);
+	}
+
+	while (tempCycle->next)
+		tempCycle = tempCycle->next;
+
+	tempCycle->next = newNode;
+
+	return (newNode);
 }

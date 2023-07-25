@@ -1,12 +1,18 @@
 #include "lists.h"
-/*
- */size_t dlistint_len(const dlistint_t *h)
+/**
+ *listint_len - the list of the integer length
+ *@h: is an h
+ *Return: county county
+ */
+size_t listint_len(const listint_t *h)
 {
-size_t len = 0;
-while (h != NULL)
-{
-h = h->next;
-len++;
-}
-return (len);
+	const listint_t *car = h;
+	int count = 0;
+
+	while (car)
+	{
+		count++;
+		car = car->next;
+	}
+	return (count);
 }

@@ -1,18 +1,16 @@
 #include "lists.h"
-/*
- */dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
+#include "4-free_listint.c"
+/**
+ *free_listint2 - free a list or free a bird
+ *@head: head to the boat please
+ *Return: anything please
+ */
+
+void free_listint2(listint_t **head)
 {
-unsigned int i = 0;
-dlistint_t *ptr;
-ptr = head;
-while (ptr)
-{
-if (i == index)
-{
-return (ptr);
-}
-ptr = ptr->next;
-i++;
-}
-return (NULL);
+
+	if (!(head))
+		return;
+	free_listint(*head);
+	*head = NULL;
 }
