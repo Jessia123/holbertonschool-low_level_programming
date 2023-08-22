@@ -53,3 +53,10 @@ int binary_search(int *array, size_t size, int value)
 	}
 	return (RETURN_VALUE);
 }
+
+int advanced_binary(int *array, size_t size, int value)
+{
+    // Implement the binary search algorithm here
+    // ...
+    // Return the index where the value was found, or -1 if not found
+}
