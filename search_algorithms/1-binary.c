@@ -1,37 +1,42 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include "search_algos.h"
+
+/**
+* binary_search - a search involving numbers
+*
+* @array: the array
+* @size: the size of the array
+* @value: the value we are looking for
+*
+* Return: the outcome of the search
+*/
 
 int binary_search(int *array, size_t size, int value)
 {
-    size_t left, right, mid;
-    
-    if (array == NULL)
-        return -1;
+	int l = 0;
+	int r = size - 1;
+	int i = 0;
 
-    left = 0;
-    right = size - 1;
+	while (l <= r)
+	{
+		int mid = (l + r) / 2;
 
-    while (left <= right)
-    {
-        mid = (left + right) / 2;
+		printf("Searching in array: ");
 
-        printf("Searching in array: ");
-        for (size_t i = left; i <= right; i++)
-        {
-            if (i == right)
-                printf("%d\n", array[i]);
-            else
-                printf("%d, ", array[i]);
-        }
+		for (i = l; i < r; i++)
+			printf("%d, ", array[i]);
 
-        if (array[mid] == value)
-            return mid;
+		printf("%d", array[i]);
+		printf("\n");
 
-        if (array[mid] < value)
-            left = mid + 1;
-        else
-            right = mid - 1;
-    }
+		if (array[mid] == value)
+			return (mid);
 
-    /* Value not found */
-    return -1;
+		if (array[mid] < value)
+			l = mid + 1;
+		else
+			r = mid - 1;
+	}
+	return (-1);
 }
